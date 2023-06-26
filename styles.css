@@ -6,6 +6,10 @@ body {
   line-height: 20px;
 }
 
+.disable-scrolling {
+  overflow-y: hidden;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -24,7 +28,7 @@ html {
 }
 
 .header {
-  background-image: url("./img/header-4.jpeg");
+  background-image: url("./img/header.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -233,52 +237,6 @@ html {
   background-color: #E1DEBF;
 }
 
-/*
-.services__content {
-  padding-top: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-}
-
-.services__left {
-  background-color: #E1DEBF;
-  width: 550px;
-  height: 380px;
-  padding: 40px 35px;
-}
-
-.services__left-title {
-  font-size: 24px;
-  line-height: 32px;
-}
-
-.left__items {
-  padding-top: 70px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.left__item {
-  display: flex;
-  gap: 30px;
-  margin: 20px 0;
-}
-
-.left__item-name {
-  font-size: 20px;
-  line-height: 24px;
-}
-
-.left__item-descr {
-  font-weight: 300;
-  font-size: 20px;
-  line-height: 24px;
-  color: #808080;
-}
-*/
-
 .services__title {
   padding-top: 40px;
 }
@@ -483,7 +441,9 @@ html {
   background-color: #000;
 }
 
-.footer__
+.footer .burger-menu__icon span {
+  background-color: #000;
+}
 
 @media only screen and (max-width: 1300px) {
   .master_class__content {
@@ -740,10 +700,13 @@ html {
 }
 
 @media only screen and (max-width: 800px) {
-
-  /* .footer .menu {
+  .footer .menu__list {
     display: none;
-  } */
+  }
+  .footer .menu {
+    justify-content: center;
+  }
+
   .burger-menu {
     display: block;
     z-index: 3;
@@ -765,7 +728,7 @@ html {
   .menu__list {
     position: absolute;
     top: 0;
-    left: -100vw;
+    left: 0;
     transition: all .2s;
     display: flex;
     position: absolute;
@@ -776,14 +739,17 @@ html {
     height: 100vh;
     width: 100vw;
     color: #fff;
+    opacity: 0;
+    pointer-events: none;
   }
 
   .menu__list.open {
+    pointer-events: all;
+    opacity: 1;
     top: 0;
     left: 0;
     z-index: 2;
     transition: all .5s;
-    overflow: hidden;
   }
 
   .menu__list-link {
