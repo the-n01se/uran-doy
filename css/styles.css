@@ -31,7 +31,7 @@ html {
 }
 
 .header {
-  background-image: url("./img/header-img.jpg");
+  background-image: url("../img/header-img.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -94,7 +94,6 @@ html {
   width: 100%;
   left: 0;
 }
-
 
 .header__titles {
   text-align: center;
@@ -213,7 +212,7 @@ html {
 }
 
 .master_class__item--1 {
-  background-image: url(./img/master-class-1.JPG);
+  background-image: url(../img/master-class-1.JPG);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: bottom center;
@@ -222,7 +221,7 @@ html {
 }
 
 .master_class__item--2 {
-  background-image: url(./img/master-class-2.JPG);
+  background-image: url(../img/master-class-2.JPG);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -234,7 +233,7 @@ html {
   grid-area: 2 / 2 / 3 / 3;
   height: 275px;
   background-color: black;
-  background: url(./img/master-class-3.JPG);
+  background: url(../img/master-class-3.JPG);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center 70%;

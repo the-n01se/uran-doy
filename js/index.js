@@ -1,4 +1,3 @@
-
 document.getElementById('burger-menu').addEventListener('click', () => {
   document.querySelector('.menu__list').classList.toggle('open');
   document.body.classList.toggle("disable-scrolling");
