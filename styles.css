@@ -118,6 +118,49 @@ html {
   text-transform: uppercase;
 }
 
+.header__btn {
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 100%;
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  transform: translate(-50%);
+  background-color: #afac8b;
+  border-radius: 20px;
+  padding: 15px 35px;
+  transition: all .3s;
+  will-change: contents;
+}
+
+.header__btn:hover {
+  transform: translate(-50%) scale(1.1);
+}
+
+.header__arrow {
+  position: absolute;
+  right: 30%;
+  bottom: 40px;
+  width: 40px;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-name: arrowUpDown;
+}
+
+@keyframes arrowUpDown {
+  0% {
+    bottom: 50px;
+  }
+
+  50% {
+    bottom: 40px;
+  }
+
+  100% {
+    bottom: 50px;
+  }
+}
 
 .about {
   background-color: #E1DEBF;
@@ -428,6 +471,109 @@ html {
   height: 540px;
 }
 
+.feedback {
+  padding: 100px 0px;
+}
+
+.feedback__content {
+  padding-top: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 120px;
+}
+
+.feedback__img {
+  width: 510px;
+  height: 680px;
+  border: 5px solid #afac8b;
+}
+
+.feedback__form {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.feedback__form input {
+  padding: 15px;
+  border: 2px solid #afac8b;
+  font-size: 20px;
+  line-height: 100%;
+  color: #888888;
+}
+
+.feedback__form-name {
+  width: 400px;
+}
+
+.feedback__form-number {
+  width: 400px;
+}
+
+.feedback__form-labels {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-self: baseline;
+  margin-top: 10px;
+  padding-left: 20px;
+}
+
+.feedback__form-label {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.feedback__form-radio {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+}
+
+.feedback__form-radio_style {
+  position: relative;
+  display: block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #fff;
+  border: 2px solid #afac8b;
+}
+
+.feedback__form-radio:checked+.feedback__form-radio_style::before {
+  content: '';
+  width: 10px;
+  height: 10px;
+  background-color: #afac8b;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+}
+
+.feedback__form-btn {
+  border: 2px solid #afac8b;
+  font-family: inherit;
+  font-size: 18px;
+  background-color: transparent;
+  padding: 10px 30px;
+  transition: all .3s;
+  align-self: baseline;
+  margin: 0;
+}
+
+.feedback__form-btn:hover {
+  background-color: #afac8b;
+  color: #ffffff;
+
+}
+
 .footer {
   border-top: 2px solid #D9D9D9;
 }
@@ -617,6 +763,10 @@ html {
     font-size: 22px;
     line-height: 26px;
   }
+
+  .feedback__content {
+    gap: 60px;
+  }
 }
 
 @media only screen and (max-width: 1000px) {
@@ -627,6 +777,10 @@ html {
 
   .header__subtitle {
     font-size: 32px;
+  }
+
+  .header__arrow {
+    right: 10%;
   }
 
   .about__content {
@@ -674,6 +828,16 @@ html {
     width: 500px;
     height: 400px;
   }
+
+  .feedback__img {
+    width: 400px;
+    height: 530px;
+  }
+
+  .feedback__form-name,
+  .feedback__form-number {
+    width: 300px;
+  }
 }
 
 @media only screen and (max-width: 900px) {
@@ -706,6 +870,7 @@ html {
   .footer .menu__list {
     display: none;
   }
+
   .footer .menu {
     justify-content: center;
   }
@@ -758,6 +923,16 @@ html {
   .menu__list-link {
     color: inherit;
     font-size: 36px;
+  }
+
+  .feedback__content {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .feedback__form-name,
+  .feedback__form-number {
+    width: 400px;
   }
 }
 
@@ -857,6 +1032,10 @@ html {
     font-size: 20px;
   }
 
+  .header__arrow {
+    right: 15px;
+  }
+
   .about__content {
     gap: 20px;
   }
@@ -901,6 +1080,20 @@ html {
     width: 350px;
     height: 280px;
   }
+
+  .feedback__title {
+    line-height: 100%;
+  }
+
+  .feedback__img {
+    width: 300px;
+    height: 400px;
+  }
+
+  .feedback__form-name,
+  .feedback__form-number {
+    width: 300px;
+  }
 }
 
 @media only screen and (max-width: 370px) {
@@ -923,6 +1116,7 @@ html {
   .about__text {
     font-size: 16px;
   }
+
 
   .master_class__title {
     font-size: 40px;

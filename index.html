@@ -18,7 +18,7 @@
     <div class="container">
       <nav class="menu">
         <a href="#header" class="logo__link">
-          <img class="logo__img" src="./img/logo.png" alt="">
+          <img class="logo__img" src="./img/logo-clear.png" alt="">
         </a>
         <ul class="menu__list" id="menu__list">
           <li class="menu__list-item">
@@ -48,11 +48,17 @@
           </div>
         </div>
       </nav>
-      <div class="header__titles">
-        <h3 class="header__subtitle">гончарная мастерская </h3>
-        <h1 class="header__title title">
-          Уран-Дой
-        </h1>
+      <div class="header__content">
+        <div class="header__titles">
+          <h3 class="header__subtitle">гончарная мастерская </h3>
+          <h1 class="header__title title">
+            Уран-Дой
+          </h1>
+        </div>
+        <a href="#feedback" class="header__btn">Записаться</a>
+        <a href="#about" class="header__arrow">
+          <img src="./img/arrow.svg" alt="">
+        </a>
       </div>
     </div>
   </header>
@@ -201,11 +207,72 @@
     </div>
   </section>
 
+  <section class="feedback" id="feedback">
+    <div class="container">
+      <h2 class="feedback__title title">Связаться с нами</h2>
+      <div class="feedback__content">
+        <img src="./img/about-img.jpg" alt="" class="feedback__img">
+        <form class="feedback__form">
+          <input type="text" class="feedback__form-name" placeholder="Имя" name="Имя" autocomplete="off" required>
+          <input type="text" class="feedback__form-number" placeholder="Номер телефона" name="Телефон" autocomplete="off" required>
+          <div class="feedback__form-labels">
+            <label class="feedback__form-label">
+              <input class="feedback__form-radio" type="radio" name="МК для взрослых" value="Мастер-класс для взрослых">
+              <span class="feedback__form-radio_style"></span>
+              Мастер-класс для взрослых
+            </label>
+            <label class="feedback__form-label">
+              <input class="feedback__form-radio" type="radio" name="МК для школьников" value="Мастер-класс для школьников">
+              <span class="feedback__form-radio_style"></span>
+              Мастер-класс для школьников
+            </label>
+            <label class="feedback__form-label">
+              <input class="feedback__form-radio" type="radio" name="МК для детей" value="Мастер-класс для детей">
+              <span class="feedback__form-radio_style"></span>
+              Мастер-класс для детей
+            </label>
+            <label class="feedback__form-label">
+              <input class="feedback__form-radio" type="radio" name="Свидание" value="Свидание">
+              <span class="feedback__form-radio_style"></span>
+              Свидание
+            </label>
+            <label class="feedback__form-label">
+              <input class="feedback__form-radio" type="radio" name="Групповое занятие" value="Групповое занятие">
+              <span class="feedback__form-radio_style"></span>
+              Групповое занятие
+            </label>
+            <label class="feedback__form-label">
+              <input class="feedback__form-radio" type="radio" name="Мероприятие" value="Проведение мероприятий">
+              <span class="feedback__form-radio_style"></span>
+              Проведение мероприятий
+            </label>
+            <label class="feedback__form-label">
+              <input class="feedback__form-radio" type="radio" name="Сертификат" value="Подарочный сертификат">
+              <span class="feedback__form-radio_style"></span>
+              Подарочный сертификат
+            </label>
+            <label class="feedback__form-label">
+              <input class="feedback__form-radio" type="radio" name="Абонемент" value="Абонемент">
+              <span class="feedback__form-radio_style"></span>
+              Абонемент
+            </label>
+            <label class="feedback__form-label">
+              <input class="feedback__form-radio" type="radio" name="Другое" value="Другое">
+              <span class="feedback__form-radio_style"></span>
+              Другое
+            </label>
+          </div>
+          <button type="submit" class="feedback__form-btn">Отправить</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
   <footer class="footer" id="footer">
     <div class="container">
       <nav class="menu">
         <a href="#header" class="logo__link">
-          <img class="logo__img" src="./img/logo.png" alt="">
+          <img class="logo__img" src="./img/logo-clear.png" alt="">
         </a>
         <ul class="menu__list">
           <li class="menu__list-item">
