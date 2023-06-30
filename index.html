@@ -9,6 +9,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Neucha&family=Open+Sans:wght@300;400;600&display=swap"
     rel="stylesheet">
   <link href="./css/normalize.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
   <link href="./css/animate.min.css" rel="stylesheet">
   <link href="./css/styles.css" rel="stylesheet">
   <title>Уран-Дой Гончарная мастерская</title>
@@ -73,15 +74,22 @@
             Творите сами, создавайте своими руками
           </p>
           <p class="about__text wow animate__animated animate__fadeInUp">
-            Занятия по лепке из глины на гончарном круге в городе Кызыле. Индивидуальные и групповые мастер-классы
-            гончарного дела. Увлекательная ручная лепка из глины для детей и взрослых. Творческие мероприятия на
-            праздниках. Товары из керамики ручной работы на заказ.
-            Гончарная мастерская «Уран-Дой» – это место, где можно творить и создавать в реальность свои идеи.
+            Здесь проводятся мастер-классы по созданию керамических изделий: 
           </p>
-          <p class="about__text wow animate__animated animate__fadeInUp">
-            Мы проводим мастер-классы по лепке из глины, обучаем работе на гончарном круге, учим раскрашивать и
-            создавать
-            узоры на изделиях из глины.</p>
+          <ul class="about__list">
+            <li class="about__list-item wow animate__animated animate__fadeInUp">Занятия по ручной лепке из глины,
+              занятия на гончарном круге, учим раскрашивать
+              и создавать узоры на
+              изделиях из глины</li>
+            <li class="about__list-item wow animate__animated animate__fadeInUp">Творческие праздники: дни рождения,
+              свидания, корпоративы</li>
+            <li class="about__list-item wow animate__animated animate__fadeInUp">Приобретение готовых или на заказ
+              керамических изделий ручной работы (сувениры,
+              посуда, украшения)</li>
+            <li class="about__list-item wow animate__animated animate__fadeInUp">Мастер-классы для детей на несколько
+              занятий в месяц - "Керамика для детей"
+            </li>
+          </ul>
         </div>
         <img class="about__img wow animate__animated animate__fadeInUp" src="./img/about-img.jpg" alt="">
       </div>
@@ -92,22 +100,63 @@
     <div class="container">
       <h2 class="master_class__title title wow animate__animated animate__fadeInUp">Мастер-классы</h2>
       <div class="master_class__content">
-        <div class="master_class__item master_class__item--1 wow animate__animated animate__fadeInUp">
+        <div class="master_class__item master_class__item--1 wow animate__animated animate__fadeInUp" data-fancybox
+          data-src="#popup_ms1">
           <h4 class="master_class__item-title">Для взрослых</h4>
-          <p class="master_class__item-price">1.500₽</p>
-          <p class="master_class__item-time">1.5 часа</p>
+          <p class="master_class__item-price">1.200₽</p>
+          <p class="master_class__item-time">19+ лет</p>
         </div>
-        <div class="master_class__item master_class__item--2 wow animate__animated animate__fadeInUp">
+        <div class="master_class__item master_class__item--2 wow animate__animated animate__fadeInUp" data-fancybox
+          data-src="#popup_ms2">
           <h4 class="master_class__item-title">Для школьников</h4>
-          <p class="master_class__item-price">1.500₽</p>
-          <p class="master_class__item-time">1.5 часа</p>
+          <p class="master_class__item-price">700₽</p>
+          <p class="master_class__item-time">8-18 лет</p>
         </div>
-        <div class="master_class__item master_class__item--3 wow animate__animated animate__fadeInUp">
+        <div class="master_class__item master_class__item--3 wow animate__animated animate__fadeInUp" data-fancybox
+          data-src="#popup_ms2">
           <h4 class="master_class__item-title">Для детей</h4>
-          <p class="master_class__item-price">1.500₽</p>
-          <p class="master_class__item-time">1.5 часа</p>
+          <p class="master_class__item-price">500₽</p>
+          <p class="master_class__item-time">4-7 лет</p>
         </div>
       </div>
+    </div>
+    <div class="popup popup--ms" id="popup_ms1">
+      <h5 class="popup__title title">
+        Для взрослых</h5>
+      <img class="popup__img popup__img--1" src="./img/master-class-1.JPG" alt="">
+      <div class="popup__texts">
+        <p class="popup__text">
+          Это прекрасная возможность научиться чему-то новому и интересному. Они помогают развивать творческие
+          способности, улучшать навыки и просто получать удовольствие от процесса обучения.
+        </p>
+        <p class="popup__text">
+          Для участия в мастер-классах не требуется специальных навыков и знаний, поэтому они подходят для людей
+          любого возраста и уровня подготовки.
+        </p>
+        <p class="popup__text">
+          Участие в мастер-классе поможет вам расслабиться, отвлечься от повседневных забот и насладиться процессом
+          творчества. Кроме того, вы получите возможность создать своими руками что-то красивое и уникальное, что
+          можно будет использовать в повседневной жизни или подарить близким людям.
+        </p>
+      </div>
+    </div>
+    <div class="popup popup--ms" id="popup_ms2">
+      <h5 class="popup__title title">
+        Для школьников и детей</h5>
+      <img class="popup__img popup__img--1" src="./img/master-class-2.JPG" alt="">
+      <p class="popup__text">
+        На занятии вас ждёт:
+      </p>
+      <ol class="popup__list">
+        <li class="popup__list-item">Развитие воображения и мелкой моторики</li>
+        <li class="popup__list-item">Тренировка концентрации внимания 👀</li>
+        <li class="popup__list-item">Навык доведения идеи до конца</li>
+        <li class="popup__list-item">Не только полезное, но и весёлое, увлекательное времяпрепровождение с
+          такими же творческими ребятами </li>
+        <li class="popup__list-item">Ну и конечно керамические шедевры, которые можно использовать в обычной
+          жизни🏺</li>
+        <li class="popup__list-item">Перекус фруктами, печеньками и чаем, чтоб отдохнуть после занятия 🍏</li>
+      </ol>
     </div>
   </section>
   <section class="services" id="services">
@@ -117,12 +166,12 @@
         <div class="services__left">
           <p class="left__title wow animate__animated animate__fadeInUp">В нашей гончарной мастерской есть тарифы</p>
           <div class="left__items">
-            <div class="left__item wow animate__animated animate__fadeInUp">
+            <div class="left__item wow animate__animated animate__fadeInUp" data-fancybox data-src="#popup_services1">
               <img src="./img/services-date-img.jpg" alt="" class="item__img">
               <p class="item__title">Свидания</p>
               <p class="item__price">1.500₽</p>
             </div>
-            <div class="left__item wow animate__animated animate__fadeInUp">
+            <div class="left__item wow animate__animated animate__fadeInUp" data-fancybox data-src="#popup_services2">
               <img src="./img/services-group-img.jpg" alt="" class="item__img">
               <p class="item__title">Групповые</p>
               <p class="item__descr">(несколько человек)</p>
@@ -156,6 +205,30 @@
             </div>
           </div>
         </div>
+      </div>
+    </div>
+    <div class="popup popup--services" id="popup_services1">
+      <h5 class="popup__title title">
+        Свидание</h5>
+      <img class="popup__img popup__img--1" src="./img/services-popup1.JPG" alt="">
+      <p class="popup__text popup__text--1">
+        Свидание в гончарной мастерской – это отличный способ провести время вдвоем. Во время такого свидания вы
+        сможете создать что-то уникальное – керамическое изделие, которое станет вашим общим воспоминанием ❤️
+      </p>
+    </div>
+    <div class="popup popup--services" id="popup_services2">
+      <h5 class="popup__title title">
+        Свидание</h5>
+      <img class="popup__img popup__img--2" src="./img/services-popup2.JPG" alt="">
+      <div class="popup__texts">
+        <p class="popup__text">
+          Мастер-класс по гончарному делу – это отличный способ провести время с друзьями и познакомиться с новым хобби.
+          Он проводится в специально оборудованной мастерской, где вы получите все необходимое для работы с глиной.
+        </p>
+        <p class="popup__text">
+          Во время группового мастер-класса вы сможете общаться с другими участниками и делиться своими идеями и опытом.
+          Это поможет вам лучше понять процесс создания изделий.
+        </p>
       </div>
     </div>
   </section>
@@ -201,12 +274,15 @@
               <p class="contact__links-title wow animate__animated animate__fadeInUp">
                 Как с нами связаться
               </p>
-              <a href="tel:88888888888" class="contact__links-link wow animate__animated animate__fadeInUp">8-888-888-88-88</a>
+              <a href="tel:88888888888"
+                class="contact__links-link wow animate__animated animate__fadeInUp">8-888-888-88-88</a>
               <a href="vk.com" class="contact__links-link wow animate__animated animate__fadeInUp">Мы в ВК</a>
-              <a href="instagram.com" class="contact__links-link wow animate__animated animate__fadeInUp">Мы в Инстаграмме</a>
+              <a href="instagram.com" class="contact__links-link wow animate__animated animate__fadeInUp">Мы в
+                Инстаграмме</a>
             </div>
           </div>
-          <p class="contact__text wow animate__animated animate__fadeInUp">Для записи звоните по телефону или пишите в социальные сети.
+          <p class="contact__text wow animate__animated animate__fadeInUp">Для записи звоните по телефону или пишите в
+            социальные сети.
             Будем рады видеть вас в нашей мастерской</p>
         </div>
         <div class="contact__map wow animate__animated animate__fadeInUp">
@@ -223,9 +299,10 @@
       <div class="feedback__content">
         <img src="./img/about-img.jpg" alt="" class="feedback__img wow animate__animated animate__fadeInUp">
         <form class="feedback__form">
-          <input type="text" class="feedback__form-name wow animate__animated animate__fadeInUp" placeholder="Имя" name="Имя" autocomplete="off" required>
-          <input type="text" class="feedback__form-number wow animate__animated animate__fadeInUp" placeholder="Номер телефона" name="Телефон"
-            autocomplete="off" required>
+          <input type="text" class="feedback__form-name wow animate__animated animate__fadeInUp" placeholder="Имя"
+            name="Имя" autocomplete="off" required>
+          <input type="text" class="feedback__form-number wow animate__animated animate__fadeInUp"
+            placeholder="Номер телефона" name="Телефон" autocomplete="off" required>
           <div class="feedback__form-labels wow animate__animated animate__fadeInUp">
             <label class="feedback__form-label">
               <input class="feedback__form-radio" type="radio" name="feedback_option" value="Мастер-класс для взрослых">
@@ -309,8 +386,12 @@
       </nav>
     </div>
   </footer>
+  <script src="https://code.jquery.com/jquery-3.7.0.slim.min.js"
+    integrity="sha256-tG5mcZUtJsZvyKAxYLVXrmjKBVLd6VpVccqz/r4ypFE=" crossorigin="anonymous"></script>
   <script src="./js/wow.min.js"></script>
   <script> new WOW().init() </script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+  <script>Fancybox.bind()</script>
   <script src="./js/index.js"></script>
 </body>
 
