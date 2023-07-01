@@ -296,6 +296,7 @@ html {
   width: 400px;
   height: 500px;
   margin: 0 auto;
+  border: 3px solid #afac8b;
 }
 
 .popup__texts {
@@ -310,7 +311,6 @@ html {
   font-size: 24px;
   line-height: 110%;
   font-weight: normal;
-  text-align: center;
 }
 
 .popup__list {
@@ -335,7 +335,10 @@ html {
   object-position: 90% 20%;
 }
 
-.popup--ms .popup__text {
+.popup__subtitle {
+  font-size: 26px;
+  line-height: 100%;
+  text-align: center;
   margin: 40px 0px 20px;
 }
 
@@ -344,7 +347,7 @@ html {
 }
 
 .popup--ms .popup__list-item {
-  font-size: 24px;
+  font-size: 22px;
   line-height: 110%;
 }
 
@@ -356,6 +359,22 @@ html {
 .popup--services .popup__img--2 {
   object-fit: cover;
   object-position: 90% 25%;
+}
+
+.popup--services ul {
+  margin-top: 40px;
+}
+
+.popup--services .popup__list-item {
+  font-size: 20px;
+  line-height: 110%;
+  color: #000;
+  list-style: disc;
+}
+
+.popup--services .popup__img--3 {
+  width: 600px;
+  height: 420px;
 }
 
 .services {
@@ -390,6 +409,15 @@ html {
   text-align: center;
 }
 
+.left__item {
+  transition: all .2s;
+  will-change: contents;
+}
+
+.left__item:hover {
+  transform: scale(1.1);
+}
+
 .item__title {
   font-size: 20px;
   line-height: 24px;
@@ -400,11 +428,6 @@ html {
   width: 200px;
   height: 200px;
   border: 5px solid #afac8b;
-}
-
-.item__descr {
-  margin-top: 5px;
-  color: #888888;
 }
 
 .item__price {
@@ -421,13 +444,19 @@ html {
 .right__items {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 30px;
 }
 
 .right__item {
   display: flex;
   align-items: center;
   gap: 40px;
+  will-change: contents;
+  transition: all .2s;
+}
+
+.right__item:hover {
+  transform: scale(1.05);
 }
 
 .right__item-img {
@@ -1006,6 +1035,10 @@ html {
 }
 
 @media only screen and (max-width: 750px) {
+  .popup--services .popup__img--3 {
+    width: 500px;
+    height: 350px;
+  }
 
   .header__title {
     font-size: 124px;
@@ -1031,6 +1064,10 @@ html {
 }
 
 @media only screen and (max-width: 550px) {
+  .popup--services .popup__img--3 {
+    width: 400px;
+    height: 280px;
+  }
   .header__title {
     font-size: 96px;
   }
@@ -1109,6 +1146,11 @@ html {
     font-size: 48px;
   }
 
+  .popup--services .popup__img--3 {
+    width: 300px;
+    height: 210px;
+  }
+
   .header__title {
     font-size: 72px;
   }
@@ -1163,6 +1205,9 @@ html {
 
   .popup__text {
     font-size: 18px;
+  }
+  .popup--services .popup__list-item {
+    font-size: 16px;
   }
 
   .contact__map {
