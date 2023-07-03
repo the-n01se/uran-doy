@@ -613,6 +613,10 @@ html {
   color: #888888;
 }
 
+.feedback__form input._error {
+  display: none;
+}
+
 .feedback__form-name {
   width: 400px;
 }
