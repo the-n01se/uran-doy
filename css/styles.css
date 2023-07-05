@@ -1343,3 +1343,18 @@ html {
     height: 230px;
   }
 }
+
+@media only screen and (max-width: 340px) {
+  .burger-menu__icon span {
+    width: 30px;
+    height: 2px;
+    background-color: #fff;
+    border-radius: 5px;
+  }
+  .burger-menu__icon {
+    gap: 7px;
+  }
+  .header .logo__img {
+    transform: scale(0.8);
+  }
+}
